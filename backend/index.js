@@ -1,6 +1,6 @@
 const cors = require("cors")
 const express = require("express")
-const multer = require("multer")
+//const multer = require("multer")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const proRoute = require("./routes/product")
