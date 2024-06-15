@@ -14,7 +14,7 @@ const ProductList = () => {
     useEffect(()=>{
       const getTitleandAuthor = async () =>{
         try {
-          const res = await axios.get('http://localhost:5000/connect/products/')
+          const res = await axios.get('https://ellobook.onrender.com/connect/products/')
           setData(res.data)
         } catch (error) {
           console.log("Something went wrong, Try Again", error);

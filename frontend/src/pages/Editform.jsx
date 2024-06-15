@@ -17,7 +17,7 @@ const Editform = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/connect/products/find/${id}`);
+                const res = await axios.get(`https://ellobook.onrender.com/connect/products/find/${id}`);
                 setData(res.data);
             } catch (error) {
                 console.error(error);
@@ -53,7 +53,7 @@ const Editform = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://localhost:5000/connect/products/${id}`, data);
+            await axios.put(`https://ellobook.onrender.com/connect/products/${id}`, data);
             navigate(-1);
         } catch (error) {
             console.error(error);

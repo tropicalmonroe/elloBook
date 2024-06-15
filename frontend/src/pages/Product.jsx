@@ -15,7 +15,7 @@ const Product = () => {
   useEffect(()=>{
     const Idcheck = async() =>{
     try {
-      const res = await axios.get("http://localhost:5000/connect/products/find/"+id)
+      const res = await axios.get("https://ellobook.onrender.com/connect/products/find/"+id)
       setData(res.data)
     } catch (error) {
       console.log(error);
@@ -32,7 +32,7 @@ const Product = () => {
     const confirm = window.confirm(`Are you sure you want to delete ${data.title}?`)
     if (confirm) { 
     try {
-      await axios.delete(`http://localhost:5000/connect/products/${_id}`);
+      await axios.delete(`https://ellobook.onrender.com/connect/products/${_id}`);
       navigate('/products') //after deletion
     } catch (error) {
       console.log(error);

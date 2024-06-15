@@ -94,7 +94,7 @@ router.put("/:id", async (req, res) => {
                   }, 
               })
           } else {
-              products = (await Product.find()).splice(0, 7)
+              products = (await Product.find())
           }
           
           res.status(200).json(products)

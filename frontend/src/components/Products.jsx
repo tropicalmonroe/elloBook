@@ -9,7 +9,7 @@ const Products = () => {
   useEffect(()=>{
     const getItems = async() =>{
       try {
-        const res = await axios.get("http://localhost:5000/connect/products?new=true")
+        const res = await axios.get("https://ellobook.onrender.com/connect/products?new=true")
         setData(res.data)
       } catch (error) {
         console.log(error);

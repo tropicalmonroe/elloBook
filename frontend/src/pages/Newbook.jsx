@@ -46,7 +46,7 @@ const NewBook = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/connect/products/', formData);
+      await axios.post('https://ellobook.onrender.com/connect/products/', formData);
       navigate(-1); // Navigate back to the previous page
     } catch (error) {
       console.log('Error submitting form:', error);
